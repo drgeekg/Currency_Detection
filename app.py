@@ -13,8 +13,8 @@ st.write("Upload an image to detect currency notes using two YOLO models, verify
 # Load both YOLO models
 @st.cache_resource
 def load_models():
-    model1 = YOLO("./model1.pt")
-    model2 = YOLO("./model2.pt")
+    model1 = YOLO("https://github.com/drgeekg/Currency_Detection/model1.pt")
+    model2 = YOLO("https://github.com/drgeekg/Currency_Detection/model2.pt")
     return model1, model2
 
 model1, model2 = load_models()
